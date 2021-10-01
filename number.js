@@ -64,4 +64,13 @@ resultado = 12.31564;
 resultadoParseado = resultado + ''; // Convierte en string
 console.log(typeof resultadoParseado);
 
+// Precisión en JS
+
+let x = 0.3;
+let y = 0.1;
+
+console.log(x - y);
+
+// Pendiente usar librería decimal.js
+
 
