@@ -21,3 +21,57 @@ console.log(fechaExpedicion);
 let fechaAleatoria = new Date(74541656546);
 console.log(fechaAleatoria);
 
+// Métodos para los objetos Date
+
+console.log(fechaActual.getFullYear()); // Devuelve el año de la fecha
+console.log(fechaActual.getMonth()); // Devuelve el mes indexado a cero
+
+const meses = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre'
+]
+
+console.log(meses[fechaActual.getMonth()]);
+
+console.log(fechaActual.getDate()); // Día del mes
+console.log(fechaActual.getDay()); // Día de la semana
+console.log(fechaActual.getHours()); // Devuelve las horas
+console.log(fechaActual.getMinutes()); // Devuelve las minutos
+console.log(fechaActual.getSeconds()); // Devuelve las segundos
+console.log(fechaActual.getMilliseconds()); // Devuelve las milisegundos
+
+const diasSemana = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sabado']
+
+const getMarcaTiempo = () => {
+    let diaSemana = diasSemana[new Date().getDay()];
+    let dd = new Date().getDate();
+    let MM = meses[new Date().getMonth()];
+    let yyyy = new Date().getFullYear();
+    let hh = ('0' + new Date().getHours()).slice(-2);
+    let mm = ('0' + new Date().getMinutes()).slice(-2);
+    let ss = ('0' + new Date().getSeconds()).slice(-2);
+
+    return `${diaSemana}, ${dd} de ${MM} de ${yyyy} a las ${hh}:${mm}:${ss}`;
+}
+
+let marcaFecha = getMarcaTiempo();
+console.log(marcaFecha);
+
+// Cálculo de fechas utilizando Date
+
+console.log(new Date().getTime()); // Devuelve milisegundos desde Epoch
+
+// Fecha dentro de 3 días
+
+let fechaRecepcion = new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000);
+console.log(fechaRecepcion);
