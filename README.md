@@ -7,3 +7,4 @@
 ## Paso por valor y referencia en JS
 ## Funciones callback
 ## Desestructuring
+## Métodos y propiedades para objetos y arrays de objetos
