@@ -4,3 +4,6 @@
 ## Métodos y propiedades para number
 ## Métodos y propiedades para fechas
 ## Métodos y propiedades para arrays
+## Paso por valor y referencia en JS
+## Funciones callback
+## Desestructuring
