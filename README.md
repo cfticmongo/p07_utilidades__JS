@@ -8,3 +8,4 @@
 ## Funciones callback
 ## Desestructuring
 ## Métodos y propiedades para objetos y arrays de objetos
+## Timers en JS
